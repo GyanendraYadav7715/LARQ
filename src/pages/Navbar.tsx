@@ -1,5 +1,5 @@
 import{ Logo,Person,Cart} from "../components/svg";
-
+ 
 
 const Navbar = () => {
     const linksleft = [
@@ -33,7 +33,7 @@ const Navbar = () => {
     ];
 
     return (
-      <div className="w-full bg-white px-16 py-4 fixed">
+      <div className="w-full bg-white px-16 py-4">
         <nav className="flex justify-between items-center">
           <ul className="flex space-x-10">
             {linksleft.map((link, index) => (

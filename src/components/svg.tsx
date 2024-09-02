@@ -1,6 +1,6 @@
 export const Logo = () => {
   return (
-    <div className="logo">
+    <div className="logo cursor-pointer">
       <svg
         width="85"
         height="20"
@@ -77,3 +77,4 @@ export const Cart = () => {
     </div>
   );
 };
+
