@@ -3,7 +3,7 @@ import Button from "../components/button";
 const PromotionBanner = () => {
   return (
     <section className="relative bg-cover bg-center h-screen flex items-center justify-center text-white bg-[url('./assets/homeshow.webp')]">
-      <div className="absolute bottom-0 left-0 mx-12 mb-20 max-w-4xl px-6   space-y-12">
+      <div className="absolute bottom-0 left-0 mx-12 mb-20 max-w-4xl px-6  space-y-12">
         <div className="space-y-4 ">
           <h3 className="text-xl capitalize tracking-wider ml-1">
             Drink brilliantly
@@ -17,7 +17,7 @@ const PromotionBanner = () => {
           Hydrated? Yes, we are.
         </p>
 
-        <Button title="Shop now" />
+        <Button title="Shop now"/>
       </div>
       <div className="absolute bottom-0 right-0 mx-12 mb-20">
         <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
