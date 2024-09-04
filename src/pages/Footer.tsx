@@ -25,18 +25,30 @@ const Footer = () => {
                 </button>
               </div>
               {/* Social Media Icons */}
-              <div className="flex space-x-4 mt-6">
-                <a href="#" className="text-gray-500 hover:text-gray-700">
-                  <i className="fab fa-facebook"></i>
+              <div className="flex space-x-6 mt-6">
+                <a
+                  href="#"
+                  className="text-gray-500 hover:text-gray-700  w-10 h-10 flex items-center justify-center rounded-full bg-slate-200 "
+                >
+                  <i className="ri-facebook-fill text-2xl"></i>
                 </a>
-                <a href="#" className="text-gray-500 hover:text-gray-700">
-                  <i className="fab fa-instagram"></i>
+                <a
+                  href="#"
+                  className="text-gray-500 hover:text-gray-700 w-10 h-10 flex items-center justify-center rounded-full bg-slate-200 "
+                >
+                  <i className="ri-instagram-fill text-2xl"></i>
                 </a>
-                <a href="#" className="text-gray-500 hover:text-gray-700">
-                  <i className="fab fa-youtube"></i>
+                <a
+                  href="#"
+                  className="text-gray-500 hover:text-gray-700 w-10 h-10 flex items-center justify-center rounded-full bg-slate-200 "
+                >
+                  <i className="ri-youtube-fill text-2xl"></i>
                 </a>
-                <a href="#" className="text-gray-500 hover:text-gray-700">
-                  <i className="fab fa-twitter"></i>
+                <a
+                  href="#"
+                  className="text-gray-500 hover:text-gray-700 w-10 h-10 flex items-center justify-center rounded-full bg-slate-200 "
+                >
+                  <i className="ri-twitter-x-fill text-2xl"></i>
                 </a>
               </div>
             </div>

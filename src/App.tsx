@@ -1,32 +1,19 @@
-//import Footer from "./pages/Footer";
-import Navbar from "./pages/Navbar";
-import PromotionBanner from "./pages/PromotionBanner";
-import ReviewsSection from "./pages/ReviewsSection";
-import WaterQualityBanner from "./pages/WaterQualityBanner";
-import Shop from "./pages/Shop";
-import Footer from "./pages/Footer";
-import SummerCool from "./pages/SummerCool";
-import NewTreanding from "./pages/NewTreanding";
-import Ourmission from "./pages/Ourmission";
-import Magazine from "./pages/Magazine";
-
+ import {BrowserRouter as Router,Routes,Route,} from "react-router-dom";
+import "remixicon/fonts/remixicon.css";
+import Home from "./pages/Home"
+import Technology from "./pages/technology";
+import Swipe from "./pages/CanvasAnimation"
 
 function App() {
   return (
     <>
-      <Navbar />
-      <PromotionBanner />
-      <div className="px-20 space-y-7">
-        <ReviewsSection />
-        <WaterQualityBanner />
-        <Shop />
-        <SummerCool />
-        <NewTreanding/>
-      </div>
-      <Ourmission />
-      <Magazine/>
-     <Footer/> 
-       
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/technology" element={<Technology />} />
+          <Route path="/swipe" element={<Swipe />} />
+        </Routes>
+      </Router>
     </>
   );
 }

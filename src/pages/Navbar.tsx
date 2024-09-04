@@ -1,5 +1,5 @@
 import{ Logo,Person,Cart} from "../components/svg";
- 
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const linksleft = [
@@ -27,7 +27,7 @@ const Navbar = () => {
         },
         {
             linktitle: "WATER QUALITY",
-            linkroute: "/waterquality",
+            linkroute: "/swipe",
         },
        
     ];
@@ -38,12 +38,12 @@ const Navbar = () => {
           <ul className="flex space-x-10">
             {linksleft.map((link, index) => (
               <li key={index}>
-                <a
-                  href={link.linkroute}
+                <Link
+                  to={link.linkroute}
                   className="cursor-pointer font-semibold tracking-widest text-sm"
                 >
                   {link.linktitle}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -51,12 +51,12 @@ const Navbar = () => {
           <ul className="flex space-x-12 items-center">
             {linksright.map((link, index) => (
               <li key={index}>
-                <a
-                  href={link.linkroute}
+                <Link
+                  to={link.linkroute}
                   className="cursor-pointer font-semibold tracking-widest text-sm"
                 >
                   {link.linktitle}
-                </a>
+                </Link>
               </li>
             ))}
             <div className="flex space-x-3">
