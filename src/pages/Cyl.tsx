@@ -6,7 +6,7 @@ import { useRef } from "react";
  
 const Cyl: React.FC = () => {
   
-  const tex = useTexture("./Screenshot_2024-09-04_132548-removebg-preview.png");
+  const tex = useTexture("./happy_teachers_day1[1].png");
   tex.needsUpdate = true;
 
    
@@ -20,9 +20,9 @@ const Cyl: React.FC = () => {
   });
 
     return (
-      <group rotation={[0, 1.4, 0.5]}>
+      <group rotation={[0, 1.5, 0]}>
         <mesh ref={cyl}>
-          <cylinderGeometry args={[2, 2, 2, 60, 60, true]} />
+          <cylinderGeometry args={[2,2,5, 80, 80, true]} />
           <meshStandardMaterial map={tex} transparent side={THREE.DoubleSide} />
         </mesh>
       </group>
